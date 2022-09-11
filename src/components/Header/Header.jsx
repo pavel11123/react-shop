@@ -57,7 +57,19 @@ const Header = () => {
         <ModalCart
           activeCart={modalCartActive}
           setActiveCart={setModalCartActive}
-        ></ModalCart>
+        >
+          <div className="basket-top d-fl">
+            <h5>Корзина</h5>
+            <div
+              className="button-delete"
+              onClick={() => setModalCartActive(false)}
+            >
+              <svg>
+                <use xlinkHref="/sprite.svg#close-delete"></use>
+              </svg>
+            </div>
+          </div>
+        </ModalCart>
       </header>
     </>
   );
