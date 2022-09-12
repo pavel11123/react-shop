@@ -51,82 +51,17 @@
 
 .sale__product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(316), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
   gap: rem(25);
   margin-top: rem(50);
-}
 
-// ---------cart sale for start page-----------
-.sale__product-cart {
-  position: relative;
-  padding: rem(30) rem(15);
-  row-gap: rem(20);
-  background: #ffffff;
-  border: rem(1) solid #e1e1e1;
-  border-radius: rem(20);
-  -webkit-border-radius: rem(20);
-  -moz-border-radius: rem(20);
-  -ms-border-radius: rem(20);
-  -o-border-radius: rem(20);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 0px 15px 40px -15px rgba(0, 0, 0, 0.15);
-    transform: translateY(rem(-5));
-    -webkit-transform: translateY(rem(-5));
-    -moz-transform: translateY(rem(-5));
-    -ms-transform: translateY(rem(-5));
-    -o-transform: translateY(rem(-5));
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
   }
-}
 
-.favorite {
-  &.favorite__catalog {
-    position: absolute;
-    top: rem(30);
-    left: rem(15);
-    z-index: 1;
-  }
-}
-
-.sale__product-img {
-  position: relative;
-  padding: 0 0 68% 0;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-
-.sale__product-bottom {
-  justify-content: space-between;
-}
-
-.sale__product-price {
-  span {
-    &:first-child {
-      font-weight: 500;
-      font-size: rem(11);
-      line-height: rem(13);
-      text-transform: uppercase;
-      color: #bdbdbd;
-    }
-    &:last-child {
-      font-weight: 700;
-      font-size: rem(14);
-      line-height: rem(17);
-      color: #000000;
-    }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(rem(150), 1fr));
+    gap: rem(10);
   }
 }
 // ====================SALE SECTION====================
@@ -137,9 +72,14 @@
 
 .category__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(316), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
   gap: rem(25);
   margin-top: rem(50);
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(rem(150), 1fr));
+    gap: rem(10);
+  }
 }
 
 .category__cart {

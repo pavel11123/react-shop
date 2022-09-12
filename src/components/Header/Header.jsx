@@ -29,7 +29,9 @@ const Header = () => {
                     <a href="/">О компании</a>
                   </li>
                   <li>
-                    <a href="/">Доставка и оплата</a>
+                    <a href="/">
+                      Доставка <span>и оплата</span>
+                    </a>
                   </li>
                   <li>
                     <a href="/">Возврат</a>
@@ -57,19 +59,7 @@ const Header = () => {
         <ModalCart
           activeCart={modalCartActive}
           setActiveCart={setModalCartActive}
-        >
-          <div className="basket-top d-fl">
-            <h5>Корзина</h5>
-            <div
-              className="button-delete"
-              onClick={() => setModalCartActive(false)}
-            >
-              <svg>
-                <use xlinkHref="/sprite.svg#close-delete"></use>
-              </svg>
-            </div>
-          </div>
-        </ModalCart>
+        ></ModalCart>
       </header>
     </>
   );

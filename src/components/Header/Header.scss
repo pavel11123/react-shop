@@ -10,6 +10,7 @@
 
   &-left {
     gap: rem(55);
+
     .header__logo {
       &::before {
         content: " ";
@@ -39,10 +40,21 @@
         }
       }
     }
+
+    .catalog__btn {
+      @media (max-width: 1560px) {
+        display: none;
+      }
+    }
   }
 
   &-right {
     gap: rem(55);
+
+    @media (max-width: 1200px) {
+      gap: rem(20);
+    }
+
     nav {
       align-items: center;
       ul {
@@ -53,6 +65,14 @@
           line-height: rem(24);
           letter-spacing: 0.05em;
           color: #000000;
+
+          a {
+            span {
+              @media (max-width: 1200px) {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -81,6 +101,10 @@
     justify-content: center;
     align-items: center;
     margin-left: rem(25);
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
 
     span {
       &:first-child {

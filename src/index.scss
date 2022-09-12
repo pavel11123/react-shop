@@ -14,7 +14,15 @@
 .container {
   max-width: rem(1710);
   margin: 0 auto;
-  padding: 0 rem(15) 0 rem(15);
+  padding: 0 rem(100) 0 rem(100);
+
+  @media (max-width: 1280px) {
+    padding: 0 rem(50) 0 rem(50);
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 rem(15) 0 rem(15);
+  }
 }
 // ---------Оболочка-----------
 
@@ -99,10 +107,21 @@
   width: rem(45);
   height: rem(45);
   cursor: pointer;
+  flex-shrink: 0;
 
   svg,
   img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
+}
+
+//title product cart
+
+.title__product {
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(17);
+  color: #000000;
 }

@@ -1,4 +1,58 @@
+import { Card } from "../components/Card/Card";
 import "./Homepage.scss";
+
+const cardProduct = [
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1299,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1399,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1999,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1999,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1699,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1299,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1399,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 4999,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 159,
+  },
+  {
+    cardImg: "/img/photo/product-1.png",
+    cardTitle: "AOS Ср-во для мытья посуды Апельсин+мята",
+    cardPrice: 1699,
+  },
+];
 
 const Homepage = () => {
   return (
@@ -21,226 +75,15 @@ const Homepage = () => {
               <span>Акционные</span> товары
             </h2>
             <div className="sale__product-grid">
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className="sale__product-cart d-fl-col">
-                <div className="favorite favorite__catalog">
-                  <img src="/img/icon/favorite.png" alt="favorite" />
-                </div>
-                <div className="sale__product-img">
-                  <img src="/img/photo/product-1.png" alt="Product-1" />
-                </div>
-                <h5 className="title__product">
-                  AOS Ср-во для мытья посуды Апельсин+мята
-                </h5>
-                <div className="sale__product-bottom d-fl">
-                  <div className="sale__product-price d-fl-col">
-                    <span>Цена:</span>
-                    <span>12 999 руб.</span>
-                  </div>
-                  <button className="plus">
-                    <svg>
-                      <use xlinkHref="/sprite.svg#plus"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+              {cardProduct.map((props) => (
+                <Card
+                  cardImg={props.cardImg}
+                  cardTitle={props.cardTitle}
+                  cardPrice={props.cardPrice}
+                  onPlus={props.cardPrice}
+                  onFavorite={props.cardTitle}
+                ></Card>
+              ))}
             </div>
           </section>
 
